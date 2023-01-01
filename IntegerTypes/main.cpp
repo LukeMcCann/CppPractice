@@ -118,5 +118,19 @@ int main()
 
     cout << "sizeof short: " << sizeof(short) << " bytes" << endl;
 
+    // Since we only have 2 bytes to represent
+    // a short the maximum value here would be 2*8=16
+    // with the sign we calculate: 2^15
+
+    cout << "short max: " << SHRT_MAX << endl;
+
+    // We can also add an operator to show whether an int is signed or unsigned
+    // this allows us to store a larger number as we forgo the need to use one bit
+    // to represent the sign of the value
+
+    unsigned int uValue = UINT_MAX;
+
+    cout << "Max unsigned int: " << uValue << endl;
+
     return 0;
 }
