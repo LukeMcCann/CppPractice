@@ -2,5 +2,6 @@
     "files.associations": {
         "*.ejs": "html",
         "string": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
