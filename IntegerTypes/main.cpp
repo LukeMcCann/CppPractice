@@ -1,5 +1,5 @@
 #include <iostream>
-#include <limits>
+#include <limits.h>
 
 using namespace std;
 
@@ -86,11 +86,37 @@ int main()
     // |--------------|-------------|-------------|-------------|------------|------------|------------|-----------|-----------|-----------|-----------|----------|----------|----------|---------|---------|---------|--------|---------|--------|--------|-------|-------|-------|------|------|------|-----|-----|-----|-----|
     // | 1073741824   |  536870912  |  268435456  |  134217728  |  67108864  |  33554432  |  16777216  |  8388608  | 4194304   |  2097152  |  1048576  |  524288  |  262144  |  131072  |  65536  |  32768  |  16384  |  8192  |  4096   |  2048  |  1024  |  512  |  256  |  128  |  64  |  32  |  16  |  8  |  4  |  2  |  1  |
     //
-    // The sum of the decimal number representation is: 2147483647
+    // The sum of the decimal number representation values is: 2147483647
     // which is our maximum value of our integer in decimal.
     //
     // In short, the reason the maximum integer value is: 2147483647 is because we are running a 32bit application
     // and this is the largest possible representation given we have 4 bytes in which to represent an integer value.
+    //
+    // While it is important to understand how our memory storage works, there is no need to remember this number.
+    // We can simply include the "limit" library to have access to ENUM values which represent our maximum and minimum
+    // values of differing types. [Limits](https://learn.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-170)
+
+    cout << "Max integer: " << INT_MAX << endl;
+    cout << "Min Integer: " << INT_MIN << endl;
+
+    // Larger integers can be represented by other data types.
+    long int lValue = 2345325345345;
+    cout << lValue << endl;
+
+    short int sValue = 23434;
+    cout << sValue << endl;
+
+    // We can also use the sizeof operator to see how much memory
+    // our ints use:
+
+    cout << "sizeof int: " << sizeof(int) << " bytes" << endl;
+
+    // The size here will equate to approximately our 4 bytes
+    // or 4*8 bits, which is 32bits, the number of bytes will
+    // as such roughly be 2^32 bits, I say roughly as one bit
+    // must be used to represent the sign of the value.
+
+    cout << "sizeof short: " << sizeof(short) << " bytes" << endl;
 
     return 0;
 }
