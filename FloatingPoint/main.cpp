@@ -14,5 +14,12 @@ int main()
     // This is what the fixed operator does in this output stream.
     cout << "Scientific float: " << scientific << cash << endl;
 
+    // Note that floats have about 7 digits floating-point precision.
+
+    // cout also has a default significant digit output, in GCC this is 8:
+    // we can modify this using setprecision:
+
+    cout << setprecision(20) << fixed << cash << endl;
+
     return 0;
 }
