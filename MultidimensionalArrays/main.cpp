@@ -10,7 +10,7 @@ int main()
     };
 
     int rowSize = sizeof(animals)/sizeof(animals[0]);
-    int colSize = sizeof(animals[0])/sizeof(animals[0][0]);
+    int colSize = sizeof(animals[0])/sizeof(string); // animals[0][0] would also work
 
     for (unsigned int i = 0; i < rowSize; i++) {
         for (unsigned int j = 0; j < colSize; j++) {
