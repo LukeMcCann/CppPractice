@@ -37,5 +37,10 @@ int main()
     long double ultraPrecise = 123.4567891231231231231123123;
     cout << setprecision(30) << fixed << percentage << endl;
 
+    // This is not often necessary, but if we need a super precise
+    // number for say scientific calculations this can be useful.
+    // just be aware that this uses 16 bytes of memory to represent
+    // our long double number.
+
     return 0;
 }
