@@ -5,6 +5,9 @@
 
                 // These specific commands define a symbol MAIN_H_
                 // if the symbol is not already defined.
+
+                // This ensures the contents of this file
+                // cannot be accidentally included more than once.
 void doSomething();
 
 #endif // !MAIN_H_
