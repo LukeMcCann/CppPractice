@@ -28,8 +28,14 @@ int main()
     // digits as it contains at least 15 significant digits
 
     double percentage = 0.234573232123453;
-
     cout << setprecision(20) << fixed << percentage << endl;
+
+    // If we really want a highly precise number
+    // conducting complex transactions then we can
+    // use long double.
+
+    long double ultraPrecise = 123.4567891231231231231123123;
+    cout << setprecision(30) << fixed << percentage << endl;
 
     return 0;
 }
