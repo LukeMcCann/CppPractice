@@ -46,5 +46,23 @@ int main()
         cout << "Element at index " << i << ": " << numberArray[i] << endl;
     }
 
+    // When we initialize an array we do not need to specify
+    // the number of elements in the array.
+
+    // C++ will not stop us accessing elements that don't exist.
+    // We will simply get nonsensical values.
+    // This is bad practice as we are accessing unallocated
+    // memory in the program.
+
+    // Writing to unallocated memory is even worse than reading from it.
+    // This is a common source of bugs in C++ and can severely
+    // break a program.
+
+    // The program might not even crash, it may work most of the
+    // time but then have an occasional crash.
+
+    // Theoretically you could even crash your whole computer
+    // doing this, or even destroy the OS.
+
     return 0;
 }
