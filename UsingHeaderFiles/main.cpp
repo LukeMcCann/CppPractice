@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "main.h"
+#include "main.h" // Tells the preprocessor that we want to use
+                 // the functions in main.h
 
 using namespace std;
 
