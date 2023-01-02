@@ -28,5 +28,14 @@ int main()
     cout << three << endl;
     cout << four << endl;
 
+    double numbers[4] = {1.2, 2.1, 3.2, 6.7};
+
+    cout << numbers[0] << endl;
+
+    for (int i = 0; i < 4; i++)
+    {
+        cout << "Element at index " << i << ": " << numbers[i] << endl;
+    }
+
     return 0;
 }
