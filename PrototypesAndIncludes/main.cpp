@@ -17,6 +17,9 @@ int main()
 // unlike JS hoisting is not a thing in C++ so
 // we must declare some reference to the function
 // in order to use it.
+
+// We usually use Prototypes in separate files completely.
+// these are Header files in C++.
 void doSomething()
 {
     cout << "Hello" << endl;
