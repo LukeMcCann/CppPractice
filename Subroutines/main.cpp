@@ -11,7 +11,7 @@ void showMenu()
     cout << "3. Quit" << endl;
 }
 
-int processSelection()
+int getInput()
 {
     cout << "Enter selection: " << flush;
 
@@ -21,12 +21,9 @@ int processSelection()
     return input;
 }
 
-int main()
+void handleSelection(int selection)
 {
-    showMenu();
-    int input = processSelection();
-
-    switch(input) {
+    switch(selection) {
         case 1:
             cout << "Searching..." << endl;
             break;
@@ -39,6 +36,13 @@ int main()
         default:
             cout << "Please select a item from the menu." << endl;
     }
+}
+
+int main()
+{
+    showMenu();
+    int selection = getInput();
+    handleSelection(selection);
 
     return 0;
 }
