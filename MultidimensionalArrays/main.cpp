@@ -24,7 +24,8 @@ int main()
 
     int values[] = {1, 2, 3};
 
-    for (int k = 0; k < sizeof(values)/sizeof(int); k++) {
+    // Remember sizeof returns an unsigned value.
+    for (unsigned int k = 0; k < sizeof(values)/sizeof(int); k++) {
         cout << "Element " << k << ": " << values[k] << endl;
     }
 
