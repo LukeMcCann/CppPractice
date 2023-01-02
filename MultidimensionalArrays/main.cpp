@@ -9,8 +9,11 @@ int main()
         {"mouse", "squirrel", "parrot"}
     };
 
-    for (unsigned int i = 0; i < sizeof(animals)/sizeof(animals[0]); i++) {
-        for (unsigned int j = 0; j < sizeof(animals[0])/sizeof(animals[0][0]); j++) {
+    int rowSize = sizeof(animals)/sizeof(animals[0]);
+    int colSize = sizeof(animals[0])/sizeof(animals[0][0]);
+
+    for (unsigned int i = 0; i < rowSize; i++) {
+        for (unsigned int j = 0; j < colSize; j++) {
             cout << animals[i][j] << " " << flush;
         }
         cout << endl;
