@@ -37,5 +37,14 @@ int main()
         cout << "Element at index " << i << ": " << numbers[i] << endl;
     }
 
+    // Sometimes we may want to iniitalize an empty array:
+
+    int numberArray[100] = {};
+
+    for (int i = 0; i < 100; i++)
+    {
+        cout << "Element at index " << i << ": " << numberArray[i] << endl;
+    }
+
     return 0;
 }
