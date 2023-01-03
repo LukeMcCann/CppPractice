@@ -9,6 +9,8 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${file}",
+				"${workspaceFolder}/Classes/Cat/*.cpp",
+				"${workspaceFolder}/Classes/Cat/*.hpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
