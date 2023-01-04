@@ -6,7 +6,10 @@ using namespace std;
 
 int main()
 {
-    speak();
+    Cat garfield;
+
+    garfield.speak();
+    garfield.jump();
 
     return 0;
 }

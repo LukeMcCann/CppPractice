@@ -4,7 +4,12 @@
 
 using namespace std;
 
-void speak()
+void Cat::speak()
 {
     cout << "Meow!" << endl;
+}
+
+void Cat::jump()
+{
+    cout << "Takes a great leap forward..." << endl;
 }
