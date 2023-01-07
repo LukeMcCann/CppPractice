@@ -17,7 +17,7 @@ Person::Person(string name, int age)
     this->age = age;
 
     // This refers to the location in memory
-    cout << "Location in memory: " << this << endl;
+    // cout << "Location in memory: " << this << endl;
 }
 
 string Person::toString()

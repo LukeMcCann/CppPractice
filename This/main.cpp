@@ -10,5 +10,9 @@ int main()
 
     cout << dave.toString() << endl;
 
+    // We can also get the memory location from a created object
+    // by prefacing it with &
+    cout << "Memory location: " << &dave << endl;
+
     return 0;
 }
