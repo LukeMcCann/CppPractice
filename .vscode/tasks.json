@@ -11,8 +11,10 @@
 				"${file}",
 				"${workspaceFolder}/Classes/*/*.cpp",
 				"${workspaceFolder}/Classes/*/*.hpp",
-				"${workspaceFolder}/MethodOverloading/*/*.cpp",
-				"${workspaceFolder}/MethodOverloading/*/*.hpp",
+				// "${workspaceFolder}/MethodOverloading/*/*.cpp",
+				// "${workspaceFolder}/MethodOverloading/*/*.hpp",
+				"${workspaceFolder}/This/*/*.cpp",
+				"${workspaceFolder}/This/*/*.hpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
